@@ -6,6 +6,8 @@
     "lint": "tact-fmt --check ./sources && yarn misti ./tact.config.json",
     "test": "yarn build && jest",
     "deploy": "yarn test && ts-node ./sources/contract.deploy.ts",
+    "interact": "ts-node ./sources/contract.interact.ts",
+    "bal": "ts-node ./sources/wallet.check.ts",
     "read": "ts-node ./sources/contract.read.ts"
   },
   "dependencies": {
@@ -23,6 +25,7 @@
     "@types/node": "^18.11.14",
     "@types/qs": "^6.9.7",
     "base64url": "^3.0.1",
+    "dotenv": "^16.5.0",
     "enquirer": "^2.3.6",
     "jest": "^29.3.1",
     "open": "^8.4.0",

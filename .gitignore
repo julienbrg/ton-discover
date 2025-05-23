@@ -3,3 +3,5 @@ sources/output
 .idea/
 .vscode/
 .DS_Store/
+/zhankai
+.env
